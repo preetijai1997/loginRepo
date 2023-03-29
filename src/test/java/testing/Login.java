@@ -24,6 +24,8 @@ public class Login {
 	   driver.findElement(By.name("userName")).sendKeys("8957181611");
 	   driver.findElement(By.id("password")).sendKeys("119705");
 	   driver.findElement(By.id("login")).click();
+	   
+	   System.out.println("Login Successfully");
 		
 
 	}
