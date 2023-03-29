@@ -12,10 +12,8 @@ public class Login {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\bs0452\\Downloads\\browsers\\chromedriver.exe");
 		
-		ChromeOptions option= new ChromeOptions();
 		
-		option.addArguments("--remote-allow-origins=*");
-	   WebDriver driver= new ChromeDriver(option);
+	   WebDriver driver= new ChromeDriver();
 	   
 	   driver.get("https://portal.bankit.in:9090/RO/");
 	   driver.manage().window().maximize();
@@ -26,8 +24,7 @@ public class Login {
 	   driver.findElement(By.id("login")).click();
 	   
 	   System.out.println("Login Successfully");
-		
-
+		System.out.println("-------------------Login Page--------------------");
 	}
 
 }
